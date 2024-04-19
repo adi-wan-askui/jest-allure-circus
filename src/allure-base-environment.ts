@@ -199,6 +199,7 @@ function extendAllureBaseEnvironment<TBase extends typeof JestEnvironment>(Base:
 				environmentInfo: config.projectConfig.testEnvironmentOptions?.environmentInfo as Record<string, any>,
 				categories: config.projectConfig.testEnvironmentOptions?.categories as Array<Record<string, any>>,
 				labels: [] as Labels[],
+				addCodeInReport: config.projectConfig.testEnvironmentOptions?.addCodeInReport as boolean ?? true
 			});
 		}
 
